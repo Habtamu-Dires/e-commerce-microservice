@@ -1,0 +1,16 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native  # native show it loaded form the local file.
+  cloud:
+    config:
+      server:
+        native:
+          searchLocations: classpath:/configurations
+
+
+
+

@@ -1,0 +1,17 @@
+# this is shared by all files.
+eureka:
+  instance:
+    hostname: localhost # host name of eureka server
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+spring:
+  cloud:
+    config:
+      override.system-properties: false  # do not override the local configs
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
